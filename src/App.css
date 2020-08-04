@@ -5,6 +5,7 @@
 #drum-machine {
   background-color: #b3b3b3;
   border: 5px solid #ffa500;
+  user-select: none;
 }
 
 .drum-pad {
