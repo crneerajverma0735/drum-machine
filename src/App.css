@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.container {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#drum-machine {
+  background-color: #b3b3b3;
+  border: 5px solid #ffa500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drum-pad {
+  background-color: #808080;
+  margin: 11px;
+  border-radius: 5px;
+  height: 80px;
+  font-size: 13px;
+  box-shadow: 4px 4px 5px black;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#display h6 {
+  font-size: 13px !important;
+  margin-left: -2px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.power {
+  width: 55px;
+  height: 26px;
+  background-color: black;
+  position: relative !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bank {
+  width: 55px;
+  height: 26px;
+  background-color: black;
+  position: relative !important;
+}
+
+.off {
+  width: 23px;
+  position: absolute !important;
+  top: 3px;
+  right: 3px;
+  height: 19px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.on {
+  width: 23px;
+  position: absolute !important;
+  top: 3px;
+  left: 3px;
+  height: 19px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.soundName {
+  background-color: #808080;
+  width: 100%;
+  height: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background-color: #4f4f4f;
+  outline: none;
+  box-shadow: 2px 2px 3px black;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border: 1px solid black;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 27px;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px black;
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* .progressLine {
+  width: 100%;
+  height: 7px;
+  border: 1px solid black !important;
+  background-color: #4f4f4f;
+  box-shadow: 2px 2px 3px black;
+  position: relative;
+}
+
+.bar {
+  width: 10px;
+  height: 30px;
+  box-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: -12px;
+  left: 30%;
+  background-color: blue;
+  cursor: pointer;
+} */
+
+.clickOrange {
+  background-color: orange;
+  box-shadow: 4px 4px 5px orange;
+}
+
+@media only screen and (max-width: 768px) {
+  #drum-machine {
+    flex-direction: column;
   }
 }
